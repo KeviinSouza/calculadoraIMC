@@ -12,9 +12,9 @@ formCalcularIMC.addEventListener('submit', function(event) {
   const kilos = parseFloat(document.getElementById('kilos').value);
   const altura = parseFloat(document.getElementById('altura').value);
 
-    const imc = calcularIMC(kilos, altura);
-    document.getElementById('imc').value = parseFloat(imc).toFixed(2);
-    verificarIMC(imc);
+  const imc = calcularIMC(kilos, altura);
+  document.getElementById('imc').value = parseFloat(imc).toFixed(2);
+  verificarIMC(imc);
 });
 
 function verificarIMC(imc) {
